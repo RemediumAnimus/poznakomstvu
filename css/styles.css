@@ -291,7 +291,8 @@ ul {
   position: relative;
   min-height: 100%;
   background: url("img/bg.png") 50% 0px;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .darkness:after {
     display: block;
     content: '';
