@@ -35,6 +35,11 @@ window.onload = function() {
 			});
 		});
 
+		$('.n-main__announcement__row__field__check').click(function(){
+		   $(this).parent().parent().find('input').prop('checked',false);
+		   $(this).find('input').prop('checked',true);
+		});
+
 		function placeholder() {
 
           $('input[type="text"],input[type="search"], textarea').focus(function(){
