@@ -50,6 +50,7 @@ window.onload = function() {
 
         function changeIso(items,element) {
             $('.n-main__grid__type1__close').hide();
+            $('.n-main__grid__type1__pic').show();
             if (!$(element).hasClass('cart-item--gigante')) {
                 $(items).removeClass('cart-item--gigante');
                 $(items).find('.n-main__grid__inside').removeClass('n-main__grid__inside--hide');
@@ -58,6 +59,7 @@ window.onload = function() {
                 $(element).find('.n-main__grid__inside').addClass('n-main__grid__inside--hide');
                 $(element).find('.n-main__grid__type1__fhov').addClass('n-main__grid__type1__fhov--hide');
                 $(element).find('.n-main__grid__type1__close').show();
+                $(element).find('.n-main__grid__type1__pic').hide();
             } else {
                 $(element).removeClass('cart-item--gigante');
                 $(element).find('.n-main__grid__inside').removeClass('n-main__grid__inside--hide');
