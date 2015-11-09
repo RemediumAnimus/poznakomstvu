@@ -2172,6 +2172,10 @@ a:focus {
       &__container {
         padding: 0px 17px;
         padding-right: 50px;
+
+        &--mod {
+          padding-right: 0;
+        }
       }
 
       &__list {
