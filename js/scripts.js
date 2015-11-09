@@ -6,11 +6,12 @@ window.onload = function() {
 			itemSelector: '.cart-item',
 			layoutMode: 'masonry',
 			masonry: {
-			    gutter: 30
+			    gutter: 30,
+			    columnWidth: 304,
 			}
 		});
 
-		var filterFns = {
+		/*var filterFns = {
 			numberGreaterThan50: function() {
 				var number = $(this).find('.number').text();
 				return parseInt( number, 10 ) > 50;
@@ -33,12 +34,45 @@ window.onload = function() {
 				$buttonGroup.find('.is-checked').removeClass('is-checked');
 				$( this ).addClass('is-checked');
 			});
-		});
+		});*/
+        var elem;
+        $grid.on( 'click', '.cart-item', function() {
+            elem = $(this);
+           changeIso('.cart-item',$(this));
+        });
+        $('.cart-item').hover(function(){
+            $(this).find('.n-main__grid__type1__fhov').toggleClass('n-main__grid__type1__fhov--hover');
+        })
 
-		$('.n-main__announcement__row__field__check').click(function(){
-		   $(this).parent().parent().find('input').prop('checked',false);
-		   $(this).find('input').prop('checked',true);
-		});
+        $grid.on( 'layoutComplete', function( event, laidOutItems ) {
+            position(elem);
+        });
+
+        function changeIso(items,element) {
+            $('.n-main__grid__type1__close').hide();
+            if (!$(element).hasClass('cart-item--gigante')) {
+                $(items).removeClass('cart-item--gigante');
+                $(items).find('.n-main__grid__inside').removeClass('n-main__grid__inside--hide');
+                $(items).find('.n-main__grid__type1__fhov').removeClass('n-main__grid__type1__fhov--hide');
+                $(element).addClass('cart-item--gigante');
+                $(element).find('.n-main__grid__inside').addClass('n-main__grid__inside--hide');
+                $(element).find('.n-main__grid__type1__fhov').addClass('n-main__grid__type1__fhov--hide');
+                $(element).find('.n-main__grid__type1__close').show();
+            } else {
+                $(element).removeClass('cart-item--gigante');
+                $(element).find('.n-main__grid__inside').removeClass('n-main__grid__inside--hide');
+                $(element).find('.n-main__grid__type1__fhov').removeClass('n-main__grid__type1__fhov--hide');
+                $('.n-main__grid__type1__close').hide();
+            }
+
+            $grid.isotope('layout');
+        }
+
+        function position(element) {
+            var body=$("html, body");
+            body.animate({scrollTop:element.offset().top-50},300,'swing');
+        }
+
 
 		function placeholder() {
 

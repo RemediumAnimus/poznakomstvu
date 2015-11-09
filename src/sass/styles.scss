@@ -1524,6 +1524,7 @@ a:focus {
 
   &__grid-container {
     overflow: hidden;
+    position: relative;
 
     &--mod {
       width: 640px;
@@ -1538,10 +1539,111 @@ a:focus {
     &:after {
       @include clear;
     }
+
+    &__inside {
+      background: #fff;
+      padding: 6px 15px 55px 16px;
+      display: none;
+      color: #202020;
+      position: relative;
+
+      &:before {
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 10px solid #fff;
+        position: absolute;
+        top: -5px;
+        left: 15px;
+      }
+
+      h4 {
+        font-family: arial;
+        font: bold 18px arial;
+        color: #202020;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        text-indent: 0px;
+        font-family: arial;
+        font-size: 13px;
+        line-height: 19px;
+        padding: 5px 0px 10px 0px;
+      }
+
+      span {
+        font-family: arial;
+        font-size: 13px;
+        line-height: 19px;
+        display: block;
+      }
+
+      &__close {
+        width: 36px;
+        height: 36px;
+        background: url("#{$img-path}/close2.png");
+        position: absolute;
+        right: 7px;
+        top: -45px;
+        cursor: pointer;
+      }
+
+      &__close2 {
+        width: 36px;
+        height: 36px;
+        background: url("#{$img-path}/close3.png");
+        position: absolute;
+        right: 7px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        bottom: 15px;
+        cursor: pointer;
+      }
+
+      &__pictures {
+        margin-top: 10px;
+
+        &:after {
+          @include clear;
+        }
+      }//pictures
+
+      &__pic {
+        &--full {
+          margin-bottom: 15px;
+          img {
+            width: 100%;
+          }
+        }
+
+        &--half {
+          width: 47.5%;
+          float: left;
+          margin-right: 2.5%;
+          margin-bottom: 15px;
+
+          &:nth-child(2n+2) {
+            margin-right: 0;
+            margin-left: 2.5%;
+          }
+        }
+      }//pic
+
+      &--hide {
+        display: block !important;
+      }
+    }//inside
     &__cart {
       //margin: 0px 15px;
       margin-bottom: 30px;
       overflow: hidden;
+      float: left;
       @include box-shadow($x: 2.5px, $y: 4.33px, $blur: 5px, $color: rgba(0, 0, 0, 0.45), $inset: "");
     }
     &__user {
@@ -1766,9 +1868,10 @@ a:focus {
       }
 
       &:hover {
-        .n-main__grid__type1__fhov {
-          display: block;
-        }
+        /*.n-main__grid__type1__fhov {
+          visibility: visible;
+          opacity: 1;
+        }*/
       }
 
       &__simple-list {
@@ -1787,7 +1890,9 @@ a:focus {
         height: 100%;
         z-index: 10;
         background: rgba(0,0,0,0.6);
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        @include transition;
 
         &__button {
           position: absolute;
@@ -1818,6 +1923,16 @@ a:focus {
           &--chock {
             background: #bc7c5b;
           }
+        }
+
+        &--hide {
+          opacity: 0 !important;
+          visibility: hidden !important;
+        }
+
+        &--hover {
+          visibility: visible;
+          opacity: 1;
         }
       }
 
@@ -1915,6 +2030,7 @@ a:focus {
         font: 18px $font-bliss-extra-light;
         line-height: 19px;
         margin-bottom: 20px;
+        position: relative;
       }
 
       &__pic {
@@ -2036,6 +2152,7 @@ a:focus {
 
       &__container {
         padding: 0px 17px;
+        padding-right: 50px;
       }
 
       &__list {
@@ -2098,6 +2215,19 @@ a:focus {
           background: #a96f52;
         }
 
+        &__close {
+          width: 36px;
+          height: 36px;
+          background: url("#{$img-path}/close2.png");
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          right: -40px;
+          display: none;
+          cursor: pointer;
+        }
+
     }//type1
 
     &__button {
@@ -2117,6 +2247,10 @@ a:focus {
       }
     }
   }//grid
+
+  .cart-item--gigante {
+    width: 640px;
+  }
 
   &__cab-bar {
     height: 48px;
