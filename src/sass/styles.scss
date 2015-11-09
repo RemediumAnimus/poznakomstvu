@@ -389,7 +389,7 @@ ul {
   min-height: 100%;
   background: url("#{$img-path}/bg.png") 50% 0px;
   background-size: cover;
-  background-attachment: fixed;
+  //background-attachment: fixed;
 
   &:after {
     display: block;
@@ -420,6 +420,12 @@ a:focus {
   margin: 0px auto;
   width: $site-width;
   position: relative;
+
+  &--full {
+    max-width: 100%;
+    width: auto;
+    min-width: $site-width;
+  }
 }
 
 .n-header {
@@ -1529,6 +1535,19 @@ a:focus {
     &--mod {
       width: 640px;
       margin: 0px auto;
+    }
+
+    &--full {
+      width: 1000px;
+      margin: 0px auto;
+
+      @media all and (min-width:1350px) {
+        width: 1310px;
+      }
+
+      @media all and (min-width:1660px) {
+        width: 1650px;
+      }
     }
   }//grid-container
 

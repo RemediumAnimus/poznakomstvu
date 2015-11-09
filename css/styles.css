@@ -291,8 +291,7 @@ ul {
   position: relative;
   min-height: 100%;
   background: url("img/bg.png") 50% 0px;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
   .darkness:after {
     display: block;
     content: '';
@@ -316,6 +315,10 @@ a:focus {
   margin: 0px auto;
   width: 980px;
   position: relative; }
+  .n-container--full {
+    max-width: 100%;
+    width: auto;
+    min-width: 980px; }
 
 .n-header {
   z-index: 10;
@@ -1128,6 +1131,15 @@ a:focus {
     .n-main__grid-container--mod {
       width: 640px;
       margin: 0px auto; }
+    .n-main__grid-container--full {
+      width: 1000px;
+      margin: 0px auto; }
+      @media all and (min-width: 1350px) {
+        .n-main__grid-container--full {
+          width: 1310px; } }
+      @media all and (min-width: 1660px) {
+        .n-main__grid-container--full {
+          width: 1650px; } }
   .n-main__grid {
     padding: 20px 0px; }
     .n-main__grid:after {
