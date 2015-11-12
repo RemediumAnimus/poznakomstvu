@@ -515,12 +515,12 @@ a:focus {
       vertical-align: top; }
       .n-header__bottom__search .n-main__n-home__select {
         position: absolute;
-        width: 60px;
+        width: 65px;
         top: 10px;
         right: 40px; }
         .n-header__bottom__search .n-main__n-home__select .ui-selectmenu-text {
           color: #000;
-          font: 14px "BlissProLightItalic", Verdana, sans-serif; }
+          font: 13px arial; }
           .n-header__bottom__search .n-main__n-home__select .ui-selectmenu-text:after {
             display: none; }
         .n-header__bottom__search .n-main__n-home__select .ui-icon {
@@ -529,7 +529,7 @@ a:focus {
         border-radius: 10px;
         border: 1px solid #b53d3d;
         color: #454545;
-        font: 14px "BlissProLightItalic", Verdana, sans-serif;
+        font: 13px arial;
         padding: 0px 105px 0px 12px;
         height: 35px; }
         .n-header__bottom__search input:-moz-placeholder {
@@ -612,7 +612,8 @@ a:focus {
         .n-main__answers__item__header--blue {
           background: #3c739a !important; }
       .n-main__answers__item__text {
-        font: 18px "BlissProExtralight", Verdana, sans-serif;
+        font: 13px arial;
+        line-height: 19px;
         padding: 15px 20px 17px 20px; }
       .n-main__answers__item__answer {
         background: #c44747;
@@ -775,8 +776,8 @@ a:focus {
           font: 14px "BlissProHeavy", Verdana, sans-serif;
           margin-bottom: 5px; }
         .n-main__messages__wrap__mes__text {
-          font: 16px "BlissProLight", Verdana, sans-serif;
-          line-height: 18px; }
+          font: 13px arial;
+          line-height: 19px; }
           .n-main__messages__wrap__mes__text__href {
             color: #fec36c;
             text-decoration: underline; }
@@ -802,7 +803,7 @@ a:focus {
       .n-main__messages__textarea textarea {
         height: 90px;
         border-radius: 10px;
-        font: 14px "BlissProLightItalic", Verdana, sans-serif;
+        font: 13px arial;
         color: #000;
         padding-left: 20px;
         padding-top: 10px;
