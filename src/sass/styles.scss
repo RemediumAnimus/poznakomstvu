@@ -641,7 +641,7 @@ a:focus {
         }
 
         span {
-          color: #000;
+          color: #fff;
         }
 
         &:before {
@@ -684,7 +684,7 @@ a:focus {
         }
 
         span {
-          color: #000;
+          color: #fff;
         }
       }
     }//button
@@ -836,7 +836,7 @@ a:focus {
         textarea {
           height: 90px;
           border-radius: 10px;
-          font: 14px $font-bliss-lightItalic;
+          font: 13px arial;
           color: #000;
           padding-left: 15px;
           padding-top: 10px;
@@ -1267,16 +1267,16 @@ a:focus {
       }//field
       input {
         border-radius: 10px;
-        font: 18px $font-bliss-light;
+        font: 13px arial;
         padding-left: 15px;
       }
 
       textarea {
         height: 180px;
         border-radius: 10px;
-        font: 18px $font-bliss-light;
+        font: 13px arial;
         padding-left: 15px;
-        color: #000;
+        color: rgba(0, 0, 0, 0.75);
       }
     }
 
@@ -1323,7 +1323,7 @@ a:focus {
 
       input {
         border-radius: 10px;
-        font: 18px $font-bliss-light;
+        font: 13px arial;
         padding-left: 15px;
       }
       .n-main__n-home__select {
@@ -1849,6 +1849,12 @@ a:focus {
       }
     }//user
 
+    &__type2 {
+      &__container {
+        padding: 0px 17px;
+      }
+    }
+
     &__type1 {
       background: #c44747;
       width: 304px;
@@ -1874,7 +1880,7 @@ a:focus {
           border: none;
           position: relative;
           z-index: 5;
-          font: 14px $font-bliss-lightItalic;
+          font: 13px arial;
           color: #000;
           padding: 10px 0px 0px 20px;
           @include placeholder(#000);
@@ -2175,7 +2181,7 @@ a:focus {
         padding-right: 50px;
 
         &--mod {
-          padding-right: 0;
+          padding-right: 5px;
         }
       }
 
@@ -2696,7 +2702,7 @@ a:focus {
           background: none;
           border: none;
           color: #fff;
-          font: 24px $font-bliss-lightItalic;
+          font: 24px $font-bliss-light;
           @include placeholder(#fff);
           padding: 0px 50px 0px 32px;
         }
@@ -2827,7 +2833,7 @@ a:focus {
       height: 40px;
       border-radius: 10px;
       margin-bottom: 20px;
-      font: 14px $font-bliss-lightItalic;
+      font: 13px arial;
       color: #000;
       padding: 0px 25px;
       @include placeholder(#000);

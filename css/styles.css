@@ -475,7 +475,7 @@ a:focus {
             left: 15px;
             top: 21px; }
         .n-header__bottom__button--mod span {
-          color: #000; }
+          color: #fff; }
         .n-header__bottom__button--mod:before {
           top: 21px; }
       .n-header__bottom__button--mod2 {
@@ -505,7 +505,7 @@ a:focus {
             left: 15px;
             top: 21px; }
         .n-header__bottom__button--mod2 span {
-          color: #000; }
+          color: #fff; }
     .n-header__bottom__search {
       display: inline-block;
       width: 475px;
@@ -621,7 +621,7 @@ a:focus {
         .n-main__answers__item__answer textarea {
           height: 90px;
           border-radius: 10px;
-          font: 13px "arial", Verdana, sans-serif;
+          font: 13px arial;
           color: #000;
           padding-left: 15px;
           padding-top: 10px; }
@@ -959,14 +959,14 @@ a:focus {
           text-align: right; }
       .n-main__announcement__row input {
         border-radius: 10px;
-        font: 18px "BlissProLight", Verdana, sans-serif;
+        font: 13px arial;
         padding-left: 15px; }
       .n-main__announcement__row textarea {
         height: 180px;
         border-radius: 10px;
-        font: 18px "BlissProLight", Verdana, sans-serif;
+        font: 13px arial;
         padding-left: 15px;
-        color: #000; }
+        color: rgba(0, 0, 0, 0.75); }
     .n-main__announcement__x3 {
       margin-bottom: 8px; }
       .n-main__announcement__x3:after {
@@ -995,7 +995,7 @@ a:focus {
           width: 325px; }
     .n-main__announcement__select input {
       border-radius: 10px;
-      font: 18px "BlissProLight", Verdana, sans-serif;
+      font: 13px arial;
       padding-left: 15px; }
     .n-main__announcement__select .n-main__n-home__select {
       width: 100%;
@@ -1378,6 +1378,8 @@ a:focus {
         text-align: center; }
         .n-main__grid__user__button-container--margin {
           margin-top: 4px; }
+    .n-main__grid__type2__container {
+      padding: 0px 17px; }
     .n-main__grid__type1 {
       background: #c44747;
       width: 304px;
@@ -1399,7 +1401,7 @@ a:focus {
           border: none;
           position: relative;
           z-index: 5;
-          font: 14px "BlissProLightItalic", Verdana, sans-serif;
+          font: 13px arial;
           color: #000;
           padding: 10px 0px 0px 20px; }
           .n-main__grid__type1__message textarea:-moz-placeholder {
@@ -1617,7 +1619,7 @@ a:focus {
         padding: 0px 17px;
         padding-right: 50px; }
         .n-main__grid__type1__container--mod {
-          padding-right: 0; }
+          padding-right: 5px; }
       .n-main__grid__type1__list {
         font: 14px "BlissProExtralight", Verdana, sans-serif;
         margin-bottom: 10px; }
@@ -1976,7 +1978,7 @@ a:focus {
           background: none;
           border: none;
           color: #fff;
-          font: 24px "BlissProLightItalic", Verdana, sans-serif;
+          font: 24px "BlissProLight", Verdana, sans-serif;
           padding: 0px 50px 0px 32px; }
           .n-main__n-home__middle__search input[type="text"]:-moz-placeholder {
             color: #fff;
@@ -2084,7 +2086,7 @@ a:focus {
     height: 40px;
     border-radius: 10px;
     margin-bottom: 20px;
-    font: 14px "BlissProLightItalic", Verdana, sans-serif;
+    font: 13px arial;
     color: #000;
     padding: 0px 25px;
     -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);

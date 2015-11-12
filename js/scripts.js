@@ -1,8 +1,7 @@
 $(document).foundation();
 
 window.onload = function() {
-
-		var $grid = $('.n-main__grid').isotope({
+		var $grid = $('.n-main__grid--script').isotope({
 			itemSelector: '.cart-item',
 			layoutMode: 'masonry',
 			masonry: {
@@ -10,6 +9,15 @@ window.onload = function() {
 			    columnWidth: 304,
 			}
 		});
+
+		var $gridStat = $('.n-main__grid').isotope({
+            itemSelector: '.cart-item',
+            layoutMode: 'masonry',
+            masonry: {
+                gutter: 30,
+                columnWidth: 304,
+            }
+        });
 
 		/*var filterFns = {
 			numberGreaterThan50: function() {
