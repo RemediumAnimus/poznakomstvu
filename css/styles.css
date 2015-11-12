@@ -621,7 +621,7 @@ a:focus {
         .n-main__answers__item__answer textarea {
           height: 90px;
           border-radius: 10px;
-          font: 14px "BlissProLightItalic", Verdana, sans-serif;
+          font: 13px "arial", Verdana, sans-serif;
           color: #000;
           padding-left: 15px;
           padding-top: 10px; }
