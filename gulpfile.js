@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 var path = {
 	build: {
-		html: '../poznakomstvy',
+		html: '../poznakomstvu',
 		css: 'css/'
 	},
 	src: {

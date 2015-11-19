@@ -482,15 +482,15 @@ a:focus {
         position: absolute;
         top: -12px;
         left: 85px;
-        width: 102px;
+        width: 135px;
         height: 64px;
-        background: url("img/b2.png");
+        background: url("img/b4.png");
         box-shadow: none;
         padding-top: 20px;
         padding-left: 30px;
         padding-right: 0; }
         .n-header__bottom__button--mod2:hover {
-          background: url("img/b3.png") 0px -70px;
+          background: url("img/b4.png") 0px -67px;
           padding-left: 33px !important; }
           .n-header__bottom__button--mod2:hover span {
             color: #8d580b; }
@@ -529,7 +529,7 @@ a:focus {
         border-radius: 10px;
         border: 1px solid #b53d3d;
         color: #454545;
-        font: 13px arial;
+        font: 13px "BlissProLight", Verdana, sans-serif;
         padding: 0px 105px 0px 12px;
         height: 35px; }
         .n-header__bottom__search input:-moz-placeholder {
@@ -573,8 +573,8 @@ a:focus {
           z-index: 10;
           opacity: 0; }
       .n-header__bottom__search--mod {
-        margin-left: 205px;
-        width: 502px; }
+        margin-left: 235px;
+        width: 470px; }
     .n-header__bottom__button-last {
       display: inline-block;
       background: #fec36c;
@@ -621,7 +621,7 @@ a:focus {
         .n-main__answers__item__answer textarea {
           height: 90px;
           border-radius: 10px;
-          font: 13px arial;
+          font: 15px "BlissProLight", Verdana, sans-serif;
           color: #000;
           padding-left: 15px;
           padding-top: 10px; }
@@ -803,7 +803,8 @@ a:focus {
       .n-main__messages__textarea textarea {
         height: 90px;
         border-radius: 10px;
-        font: 13px arial;
+        font: 15px "BlissProLight", Verdana, sans-serif;
+        color: #000;
         color: #000;
         padding-left: 20px;
         padding-top: 10px;
@@ -959,14 +960,15 @@ a:focus {
           text-align: right; }
       .n-main__announcement__row input {
         border-radius: 10px;
-        font: 13px arial;
+        font: 15px "BlissProLight", Verdana, sans-serif;
+        color: #000;
         padding-left: 15px; }
       .n-main__announcement__row textarea {
         height: 180px;
         border-radius: 10px;
-        font: 13px arial;
-        padding-left: 15px;
-        color: rgba(0, 0, 0, 0.75); }
+        font: 15px "BlissProLight", Verdana, sans-serif;
+        color: #000;
+        padding-left: 15px; }
     .n-main__announcement__x3 {
       margin-bottom: 8px; }
       .n-main__announcement__x3:after {
@@ -995,7 +997,8 @@ a:focus {
           width: 325px; }
     .n-main__announcement__select input {
       border-radius: 10px;
-      font: 13px arial;
+      font: 15px "BlissProLight", Verdana, sans-serif;
+      color: #000;
       padding-left: 15px; }
     .n-main__announcement__select .n-main__n-home__select {
       width: 100%;
@@ -1401,7 +1404,7 @@ a:focus {
           border: none;
           position: relative;
           z-index: 5;
-          font: 13px arial;
+          font: 13px "BlissProLight", Verdana, sans-serif;
           color: #000;
           padding: 10px 0px 0px 20px; }
           .n-main__grid__type1__message textarea:-moz-placeholder {
@@ -2086,7 +2089,7 @@ a:focus {
     height: 40px;
     border-radius: 10px;
     margin-bottom: 20px;
-    font: 13px arial;
+    font: 13px "BlissProLight", Verdana, sans-serif;
     color: #000;
     padding: 0px 25px;
     -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);

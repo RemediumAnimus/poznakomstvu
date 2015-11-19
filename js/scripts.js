@@ -1,6 +1,6 @@
 $(document).foundation();
 
-window.onload = function() {
+$(document).ready(function() {
 		var $grid = $('.n-main__grid--script').isotope({
 			itemSelector: '.cart-item',
 			layoutMode: 'masonry',
@@ -80,7 +80,7 @@ window.onload = function() {
 
         function position(element) {
             var body=$("html, body");
-            body.animate({scrollTop:element.offset().top-50},300,'swing');
+            body.animate({scrollTop:element.offset().top-50},700,'swing');
         }
 
 
@@ -268,4 +268,4 @@ window.onload = function() {
 
 //!/check-field//
 
-};
+});
