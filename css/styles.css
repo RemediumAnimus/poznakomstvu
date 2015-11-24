@@ -920,6 +920,8 @@ a:focus {
         float: left;
         margin-right: 75px;
         margin-top: 5px; }
+        .n-main__announcement__row__field--mod {
+          width: 270px; }
         .n-main__announcement__row__field:after {
           display: block;
           content: "";

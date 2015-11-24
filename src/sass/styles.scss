@@ -1219,6 +1219,10 @@ a:focus {
         margin-right: 75px;
         margin-top: 5px;
 
+        &--mod {
+          width: 270px;
+        }
+
         &:after {
           @include clear;
         }

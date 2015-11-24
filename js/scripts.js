@@ -197,6 +197,11 @@ $(document).ready(function() {
             });
         });
 
+        $('.one-of input').click(function(){
+            $(this).parent().parent().parent().parent().find('.one-of input').prop('checked',false);
+            $(this).prop('checked',true);
+        });
+
 //!check-field//
 
     $(function() {
