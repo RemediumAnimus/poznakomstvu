@@ -521,11 +521,12 @@ a:focus {
     }
 
     &__logo {
-      width: 144px;
-      height: 28px;
-      background: url("#{$img-path}/logo-min.png");
+      width: 242px;
+      height: 31px;
+      background: url("#{$img-path}/logo2.png");
       float: left;
       margin-left: 10px;
+      margin-top: -3px;
     }
 
     &__list {
@@ -2670,8 +2671,8 @@ a:focus {
       }
       &__logo {
         width: 462px;
-        height: 80px;
-        background: url("#{$img-path}/logo.png");
+        height: 59px;
+        background: url("#{$img-path}/logo-b.png");
         float: left;
         margin-left: 17px;
         margin-top: 6px;

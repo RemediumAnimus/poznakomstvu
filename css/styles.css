@@ -385,11 +385,12 @@ a:focus {
       background: url("img/hand-min.png");
       float: left; }
     .n-header__middle__logo {
-      width: 144px;
-      height: 28px;
-      background: url("img/logo-min.png");
+      width: 242px;
+      height: 31px;
+      background: url("img/logo2.png");
       float: left;
-      margin-left: 10px; }
+      margin-left: 10px;
+      margin-top: -3px; }
     .n-header__middle__list {
       float: right;
       padding-top: 4px; }
@@ -1953,8 +1954,8 @@ a:focus {
       clear: both; }
     .n-main__n-home__top__logo {
       width: 462px;
-      height: 80px;
-      background: url("img/logo.png");
+      height: 59px;
+      background: url("img/logo-b.png");
       float: left;
       margin-left: 17px;
       margin-top: 6px; }
