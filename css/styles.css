@@ -917,10 +917,27 @@ a:focus {
       .n-main__announcement__row__field {
         display: table;
         height: 35px;
-        width: 150px;
+        width: 280px;
         float: left;
         margin-right: 75px;
-        margin-top: 5px; }
+        margin-top: 5px;
+        position: relative; }
+        .n-main__announcement__row__field:before {
+          content: ';';
+          display: block;
+          color: #fff;
+          font-size: 18px;
+          position: absolute;
+          right: -30px;
+          top: 5px; }
+        .n-main__announcement__row__field + div {
+          width: 160px;
+          margin-right: 65px; }
+        .n-main__announcement__row__field:last-child {
+          margin-right: 0;
+          width: 360px; }
+          .n-main__announcement__row__field:last-child:before {
+            display: none; }
         .n-main__announcement__row__field--mod {
           width: 270px; }
         .n-main__announcement__row__field:after {
@@ -946,9 +963,13 @@ a:focus {
           .n-main__announcement__row__field__check input:checked + div {
             display: block; }
           .n-main__announcement__row__field__check div {
-            width: 21px;
-            height: 20px;
-            background: url("img/check.png");
+            width: 100%;
+            height: 100%;
+            background: #ff5858;
+            border-radius: 10px;
+            background-image: url("img/check.png");
+            background-repeat: no-repeat;
+            background-position: center;
             position: absolute;
             left: 0;
             right: 0;
@@ -960,7 +981,14 @@ a:focus {
           display: table-cell;
           vertical-align: middle;
           font: 18px "BlissProLight", Verdana, sans-serif;
-          text-align: right; }
+          text-align: left;
+          padding-left: 10px; }
+          .n-main__announcement__row__field span b {
+            font-weight: normal;
+            color: #fec36c; }
+        .n-main__announcement__row__field input {
+          width: 170px;
+          float: right; }
       .n-main__announcement__row input {
         border-radius: 10px;
         font: 15px "BlissProLight", Verdana, sans-serif;

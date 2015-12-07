@@ -17,7 +17,7 @@ $(document).ready(function() {
                 gutter: 30,
                 columnWidth: 304,
             }
-        });
+        });              
 
 		/*var filterFns = {
 			numberGreaterThan50: function() {
