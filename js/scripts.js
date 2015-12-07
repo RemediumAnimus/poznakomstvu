@@ -80,7 +80,7 @@ $(document).ready(function() {
 
         function position(element) {
             var body=$("html, body");
-            body.animate({scrollTop:element.offset().top-50},700,'swing');
+            body.stop().animate({scrollTop:element.offset().top-50},700,'swing');
         }
 
 
