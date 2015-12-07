@@ -426,6 +426,10 @@ a:focus {
           top: -2px; }
         .n-header__middle__list__item:last-child {
           margin-right: 16px; }
+    .n-header__middle .mod li:before {
+      display: none; }
+    .n-header__middle .mod li a {
+      border-bottom: 1px dashed #fff; }
   .n-header__bottom {
     background: #ff5858;
     padding: 6px 0px;

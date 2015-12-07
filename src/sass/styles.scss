@@ -574,8 +574,18 @@ a:focus {
         &:last-child {
           margin-right: 16px;
         }
-      }
+      }            
     }//list
+    .mod {
+      li {
+        &:before {
+          display: none;
+        }
+        a {
+          border-bottom: 1px dashed #fff;
+        }
+      }
+    }
   }//middle
 
   &__bottom {
