@@ -1918,12 +1918,12 @@ a:focus {
     .n-main__faq .n-main__button {
       margin-top: 20px; }
   .n-main__n-home {
-    margin-top: 280px; }
+    margin-top: 0px; }
     .n-main__n-home__select-container {
       clear: both;
       position: absolute;
       right: 0px;
-      top: 30px; }
+      top: 286px; }
       .n-main__n-home__select-container:after {
         display: block;
         content: "";
@@ -1985,12 +1985,11 @@ a:focus {
       content: "";
       clear: both; }
     .n-main__n-home__top__logo {
-      width: 462px;
-      height: 59px;
-      background: url("img/logo-b.png");
-      float: left;
-      margin-left: 17px;
-      margin-top: 6px; }
+      width: 320px;
+      height: 323px;
+      background: url("img/logo3.png");
+      margin: 0px auto;
+      margin-bottom: 25px; }
     .n-main__n-home__top__pic {
       width: 105px;
       height: 74px;

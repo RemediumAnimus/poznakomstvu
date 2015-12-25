@@ -2624,13 +2624,13 @@ a:focus {
   }
 
   &__n-home {
-    margin-top: 280px;
+    margin-top: 0px;
 
     &__select-container {
       clear: both;
       position: absolute;
       right: 0px;
-      top: 30px;
+      top: 286px;
 
       &:after {
         @include clear;
@@ -2719,12 +2719,12 @@ a:focus {
         @include clear;
       }
       &__logo {
-        width: 462px;
-        height: 59px;
-        background: url("#{$img-path}/logo-b.png");
-        float: left;
-        margin-left: 17px;
-        margin-top: 6px;
+        width: 320px;
+        height: 323px;
+        background: url("#{$img-path}/logo3.png");
+        //margin-left: 17px;
+        margin: 0px auto;
+        margin-bottom: 25px;
       }
 
       &__pic {
