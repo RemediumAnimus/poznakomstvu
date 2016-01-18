@@ -1697,6 +1697,29 @@ a:focus {
         .n-main__grid__type1 input[type="text"]::-webkit-input-placeholder {
           color: #fff;
           opacity: 1; }
+      .n-main__grid__type1 input[type="password"] {
+        background: rgba(0, 0, 0, 0.2);
+        border: 0;
+        border-radius: 10px;
+        height: 40px;
+        padding: 0px 16px;
+        font: 18px "BlissProExtralight", Verdana, sans-serif;
+        position: relative;
+        z-index: 10;
+        color: #fff;
+        margin-top: 12px; }
+        .n-main__grid__type1 input[type="password"]:-moz-placeholder {
+          color: #fff;
+          opacity: 1; }
+        .n-main__grid__type1 input[type="password"]::-moz-placeholder {
+          color: #fff;
+          opacity: 1; }
+        .n-main__grid__type1 input[type="password"]:-ms-input-placeholder {
+          color: #fff;
+          opacity: 1; }
+        .n-main__grid__type1 input[type="password"]::-webkit-input-placeholder {
+          color: #fff;
+          opacity: 1; }
       .n-main__grid__type1--brown {
         background: #a96f52; }
       .n-main__grid__type1--blue {

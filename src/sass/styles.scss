@@ -2281,6 +2281,20 @@ a:focus {
          @include placeholder(#fff);
          margin-top: 12px;
        }
+       
+       input[type="password"] {
+         background: rgba(0,0,0,0.2);
+         border: 0;
+         border-radius: 10px;
+         height: 40px;
+         padding: 0px 16px;
+         font: 18px $font-bliss-extra-light;
+         position: relative;
+         z-index: 10;
+         color: #fff;
+         @include placeholder(#fff);
+         margin-top: 12px;
+       }
 
        &--brown {
          background: #a96f52;
