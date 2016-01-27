@@ -2134,6 +2134,14 @@ a:focus {
         &--lightgreen {
           background: #00676f;
         }
+        
+        &--blue {
+          background: #346588;
+        }
+        
+        &--chock {
+          background: #8a5a41;
+        }
       }//bottom
 
       &__button-edit {
@@ -2201,6 +2209,22 @@ a:focus {
 
           &:hover {
             background: darken(#00949f,5%);
+          }
+        }
+        
+        &--blue {
+          background: #0480ab;
+
+          &:hover {
+            background: darken(#0480ab,5%);
+          }
+        }
+        
+        &--chock {
+          background: #bc7c5b;
+
+          &:hover {
+            background: darken(#bc7c5b,5%);
           }
         }
       }//button

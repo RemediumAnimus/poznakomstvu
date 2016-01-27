@@ -1584,6 +1584,10 @@ a:focus {
           clear: both; }
         .n-main__grid__type1__bottom--lightgreen {
           background: #00676f; }
+        .n-main__grid__type1__bottom--blue {
+          background: #346588; }
+        .n-main__grid__type1__bottom--chock {
+          background: #8a5a41; }
       .n-main__grid__type1__button-edit {
         background: #c44747;
         display: inline-block;
@@ -1636,6 +1640,14 @@ a:focus {
         background: #00949f; }
         .n-main__grid__type1__button--lightgreen:hover {
           background: #007c86; }
+      .n-main__grid__type1__button--blue {
+        background: #0480ab; }
+        .n-main__grid__type1__button--blue:hover {
+          background: #036d92; }
+      .n-main__grid__type1__button--chock {
+        background: #bc7c5b; }
+        .n-main__grid__type1__button--chock:hover {
+          background: #b46e4a; }
       .n-main__grid__type1__href {
         font: 14px "BlissProExtralight", Verdana, sans-serif;
         position: relative;
