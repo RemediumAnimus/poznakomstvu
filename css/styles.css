@@ -330,7 +330,8 @@ a:focus {
   bottom: 0;
   margin: auto;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 100; }
+  z-index: 100;
+  display: none; }
   .n-pop__save__close {
     width: 29px;
     height: 29px;

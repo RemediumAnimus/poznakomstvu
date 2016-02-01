@@ -439,6 +439,7 @@ a:focus {
   margin: auto;
   background: rgba(0,0,0,0.8);
   z-index: 100;
+  display: none;
   
   &__close {
     width: 29px;
