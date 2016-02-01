@@ -197,16 +197,17 @@ $(document).ready(function() {
             });
         });
 
-        $('.one-of input[type="radio"]').click(function(){
-            $(this).parent().parent().parent().parent().find('.one-of input').prop('checked',false);
+        $('.one-of input[type="radio"]').click(function(){       	
+            $(this).parent().parent().parent().parent().find('.one-of input').prop('checked',false);        
             $(this).prop('checked',true);
+            console.log($(this).val());           
             if ($(this).parent().parent().hasClass('n-field')) {
             	$(this).parent().parent().find('input[type="text"]').prop('disabled',false);
             	$(this).parent().parent().find('input[type="text"]').focus();
             } else {
             	$('.n-field').find('input[type="text"]').prop('disabled',true).val('');
             }
-        });
+        });              
 
 //!check-field//
 

@@ -1356,6 +1356,16 @@ a:focus {
             left: 85px;
             display: block;
             text-align: center; }
+            .n-main__grid__user__pic__hover__del input {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              z-index: 10;
+              left: 0;
+              top: 0; }
+            .n-main__grid__user__pic__hover__del input:checked + div {
+              background: rgba(255, 88, 88, 0.6); }
             .n-main__grid__user__pic__hover__del__img {
               width: 56px;
               height: 56px;
