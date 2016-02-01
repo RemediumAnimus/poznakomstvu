@@ -428,6 +428,37 @@ a:focus {
   }
 }
 
+.n-pop__save {
+  width: 306px;
+  height: 96px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0,0,0,0.8);
+  z-index: 100;
+  
+  &__close {
+    width: 29px;
+    height: 29px;
+    background: url("#{$img-path}/cl.png");
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  span {
+    text-align: center;
+    padding-top: 43px;
+    display: block;
+  }
+}
+
 .n-header {
   z-index: 10;
   position: relative;
