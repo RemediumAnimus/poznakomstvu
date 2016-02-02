@@ -731,6 +731,27 @@ a:focus {
         }
       }
     }//button
+    
+    .selected {
+      background: url("#{$img-path}/b4.png") 0px -67px;
+      padding-left: 33px !important;
+
+      span {
+        color: #8d580b;
+      }     
+
+      &:before {
+        display: block;
+        content: '';
+        width: 15px;
+        height: 18px;
+        background: url("#{$img-path}/arr-red.png");
+        background-size: contain;
+        position: absolute;
+        left: 15px;
+        top: 21px;
+      }
+    }
 
     &__search {
       display: inline-block;

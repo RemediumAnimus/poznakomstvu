@@ -538,6 +538,21 @@ a:focus {
             top: 21px; }
         .n-header__bottom__button--mod2 span {
           color: #fff; }
+    .n-header__bottom .selected {
+      background: url("img/b4.png") 0px -67px;
+      padding-left: 33px !important; }
+      .n-header__bottom .selected span {
+        color: #8d580b; }
+      .n-header__bottom .selected:before {
+        display: block;
+        content: '';
+        width: 15px;
+        height: 18px;
+        background: url("img/arr-red.png");
+        background-size: contain;
+        position: absolute;
+        left: 15px;
+        top: 21px; }
     .n-header__bottom__search {
       display: inline-block;
       width: 475px;
