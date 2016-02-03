@@ -2151,7 +2151,6 @@ a:focus {
       color: #fff;
       font: 18px "BlissProLightItalic", Verdana, sans-serif;
       display: inline-block;
-      padding: 3px 28px 5px 28px;
       background-color: rgba(0, 0, 0, 0.2);
       border-radius: 10px;
       -ms-box-shadow: inset 2.5px 4.33px 5px rgba(0, 0, 0, 0.15);
@@ -2159,12 +2158,28 @@ a:focus {
       box-shadow: inset 2.5px 4.33px 5px rgba(0, 0, 0, 0.15);
       position: relative;
       margin-right: 8px;
-      margin-top: 14px; }
-      .n-main__n-home__bottom__button:hover {
-        background-color: rgba(0, 0, 0, 0.4);
-        color: #fff;
-        padding: 3px 18px 5px 38px; }
-        .n-main__n-home__bottom__button:hover:after {
+      margin-top: 14px;
+      /*&:hover {
+          background-color: rgba(0, 0, 0, 0.4);
+          color: #fff;
+          padding: 3px 18px 5px 38px;
+
+          &:after {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 19px;
+            background: url("img/arr-red.png");
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 14px;
+          }
+        }*/ }
+      .n-main__n-home__bottom__button div {
+        padding: 3px 28px 5px 28px; }
+        .n-main__n-home__bottom__button div:after {
           display: block;
           content: '';
           position: absolute;
@@ -2174,7 +2189,22 @@ a:focus {
           top: 0;
           bottom: 0;
           margin: auto;
-          left: 14px; }
+          left: 14px;
+          display: none; }
+      .n-main__n-home__bottom__button input {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        cursor: pointer; }
+        .n-main__n-home__bottom__button input:checked + div {
+          padding: 3px 18px 5px 38px; }
+          .n-main__n-home__bottom__button input:checked + div:after {
+            display: block; }
 
 .popup__connect {
   width: 430px;
