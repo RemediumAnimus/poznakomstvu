@@ -199,15 +199,23 @@ $(document).ready(function() {
 
         $('.one-of input[type="radio"]').click(function(){       	
             $(this).parent().parent().parent().parent().find('.one-of input').prop('checked',false);        
-            $(this).prop('checked',true);
-            console.log($(this).val());           
+            $(this).prop('checked',true);         
             if ($(this).parent().parent().hasClass('n-field')) {
             	$(this).parent().parent().find('input[type="text"]').prop('disabled',false);
             	$(this).parent().parent().find('input[type="text"]').focus();
             } else {
             	$('.n-field').find('input[type="text"]').prop('disabled',true).val('');
             }
-        });              
+        });  
+        
+        $('.n-main__messages__header__buttons__answer').click(function(){
+        	$(this).parent().parent().parent().parent().find('.n-main__answers__item__answer').toggle();
+        	$(this).toggle();
+        });
+        $('.n-main__messages__header__buttons__cancel').click(function(){
+        	$(this).parent().parent().parent().toggle();
+        	$(this).parent().parent().parent().parent().find('.n-main__messages__header__buttons__answer').toggle();
+        });           
 
 //!check-field//
 

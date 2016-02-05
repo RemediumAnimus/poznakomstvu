@@ -664,7 +664,8 @@ a:focus {
         padding: 15px 20px 17px 20px; }
       .n-main__answers__item__answer {
         background: #c44747;
-        padding: 8px 16px 20px 16px; }
+        padding: 8px 16px 20px 16px;
+        display: none; }
         .n-main__answers__item__answer textarea {
           height: 90px;
           border-radius: 10px;
