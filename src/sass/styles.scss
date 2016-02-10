@@ -1547,7 +1547,7 @@ a:focus {
 
   &__submenu {
     background: #08202a;
-    height: 40px;
+    padding-bottom: 10px;
 
     ul {
       padding-top: 12px;
@@ -1560,6 +1560,7 @@ a:focus {
         float: left;
         margin-right: 20px;
         font: 14px $font-bliss-light;
+        margin-bottom: 5px;
 
         &:first-child {
           margin-right: 15px;
@@ -1574,6 +1575,7 @@ a:focus {
     &__item {
       span {
         position: relative;
+        display: block;
 
         &:hover {
           &:after {
@@ -1583,6 +1585,8 @@ a:focus {
             height: 1px;
             background: url("#{$img-path}/pp.png");
             bottom: -3px;
+            position: absolute;
+            left: 0;
           }
         }
       }
